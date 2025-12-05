@@ -1,0 +1,265 @@
+/* ===============================
+   GLOBAL
+================================== */
+
+/* Hace que padding y border no agranden los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos base del body */
+body {
+    margin: 0;                 /* Quita el margen por defecto */
+    padding: 0;                /* Quita el padding por defecto */
+    background: #0a0a0a;       /* Fondo oscuro */
+    font-family: "Cinzel", serif; /* Fuente principal */
+    color: #e0e0e0;            /* Color de texto */
+}
+
+/* ===============================
+   ENLACES
+================================== */
+
+/* Estilo general de los links */
+a {
+    color: #cfcfcf;            /* Color gris claro */
+    text-decoration: none;     /* Quita el subrayado */
+    transition: 0.3s ease;     /* Animación suave */
+}
+
+/* Efecto al pasar el mouse */
+a:hover {
+    color: #ffffff;            /* Se vuelve blanco */
+}
+
+/* ===============================
+   TITULARES
+================================== */
+
+/* Colores de títulos */
+h1, h2 {
+    color: #ffffff;
+}
+
+/* ===============================
+   HEADER PRINCIPAL
+================================== */
+
+/* Cuadro del título */
+.title {
+    margin: 20px;                  /* Separación externa */
+    padding: 20px;                 /* Espacio interno */
+    background: #101010;           /* Fondo oscuro */
+    border: 1px solid #2e2e2e;     /* Borde sutil */
+    border-radius: 8px;            /* Esquinas redondeadas */
+
+    text-align: start;             /* Alineado a la izquierda */
+    transition: 0.3s ease;         /* Animación suave */
+
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.1); /* Brillo estilo neón */
+}
+
+/* Hover del título */
+.title:hover {
+    background: #151515;           /* Fondo un poco más claro */
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.2); /* Más brillo */
+}
+
+/* ===============================
+   ENLACE / BOTÓN “Mascota”
+================================== */
+
+/* Estilo del enlace Mascota */
+.mascota {
+    color: #dcdcdc;                /* Gris claro */
+    cursor: pointer;               /* Cambia a mano */
+}
+
+/* Hover */
+.mascota:hover {
+    color: #9ad8ff;                /* Azul brillante */
+}
+
+/* ===============================
+   SECCIÓN SOBRE MÍ
+================================== */
+
+/* Ajuste de ancho y alineación */
+.sobre_mi, 
+.proyect {
+    width: 70%;                    /* Ocupa el 70% del ancho */
+    margin: 20px auto;             /* Centrado con margen */
+    text-align: justify;           /* Texto justificado */
+}
+
+/* Parrafos */
+p {
+    color: rgba(240, 240, 240, 0.85);   /* Blanco suave */
+}
+
+/* ===============================
+   CONTACTO
+================================== */
+
+.contact {
+    width: 80%;                        /* Contenedor más ancho */
+    margin: 40px auto;                 /* Centrado */
+    padding: 20px;                     /* Espacio interno */
+
+    background: #111;                  /* Fondo oscuro */
+    border: 1px solid #2e2e2e;         /* Borde tenue */
+    border-radius: 10px;               /* Esquinas redondeadas */
+
+    text-align: center;                /* Centra el texto */
+
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1); /* Brillo suave */
+}
+
+/* Título dentro del contacto */
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+/* Formulario centrado en columna */
+.contact form {
+    display: flex;
+    flex-direction: column;        /* Elementos uno debajo del otro */
+    gap: 12px;                     /* Espacio entre elementos */
+    align-items: center;           /* Centrado horizontal */
+}
+
+/* Inputs */
+.contact input {
+    width: 260px;                  /* Tamaño fijo */
+    padding: 10px;                 /* Espacio interno */
+    border-radius: 8px;            /* Esquinas redondeadas */
+
+    border: 1px solid #333;        /* Bordes discretos */
+    background: #0f0f0f;           /* Fondo oscuro */
+    color: #fff;                   /* Texto blanco */
+
+    box-shadow: inset 0 0 8px rgba(0,255,255,0.1); /* Brillo interno */
+}
+
+/* Efecto al hacer click */
+.contact input:focus {
+    outline: none;                      /* Sin borde azul */
+    border-color: #00c8ff;              /* Borde celeste */
+    box-shadow: 0 0 8px rgba(0, 200, 255, 0.5); /* Brillo */
+}
+
+/* Botón */
+.contact button {
+    background: #00baff;                /* Celeste */
+    border: none;
+    padding: 12px 30px;                 /* Botón grande */
+    border-radius: 8px;
+    color: #000;
+    cursor: pointer;
+
+    font-weight: bold;
+    transition: 0.3s ease;
+
+    box-shadow: 0 0 6px rgba(0, 255, 255, 0.4); /* Brillo */
+}
+
+/* Hover botón */
+.contact button:hover {
+    background: #0088cc;                 /* Más oscuro */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Más brillo */
+}
+
+/* ===============================
+   SECCIÓN MASCOTAS / GALERÍA
+================================== */
+
+/* Título de sección */
+.titulo {
+    margin: 30px auto;
+    padding: 15px;
+
+    width: 90%;
+    background: #111;
+    border: 1px solid #2e2e2e;
+    border-radius: 10px;
+
+    text-align: center;
+    transition: 0.3s ease;
+
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+}
+
+/* Hover del título */
+.titulo:hover {
+    transform: scale(1.03);            /* Aumenta un poco */
+    background: #161616;
+    box-shadow: 0 0 14px rgba(0, 255, 255, 0.25);
+}
+
+/* Botón simple */
+.button {
+    background: #101010;
+    border: 1px solid #2e2e2e;
+    padding: 8px 20px;
+    margin: 5px;
+
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* Hover del botón */
+.button:hover {
+    background: #1c1c1c;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+/* ===============================
+   GALERÍA DE IMÁGENES
+================================== */
+
+/* Grid de imágenes responsive */
+.contenedor-imagenes {
+    width: 90%;
+    margin: 50px auto;
+
+    display: grid;                          /* Activa grid */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    /* Crea columnas flexibles */
+    
+    gap: 1.5rem;                            /* Espacio entre tarjetas */
+}
+
+/* Tarjeta individual */
+.item {
+    background: #0f0f0f;
+    padding: 1rem;
+
+    border-radius: 12px;
+    border: 1px solid #2e2e2e;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+
+    box-shadow: 0 0 10px rgba(0,255,255,0.05);
+    transition: 0.3s ease;
+}
+
+/* Hover tarjeta */
+.item:hover {
+    transform: scale(1.04);                 /* Efecto pop */
+    background: #161616;
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+/* Imagen dentro de la tarjeta */
+.item img {
+    width: 100%;                             /* Se ajusta al contenedor */
+    height: 200px;                           /* Alto fijo */
+    border-radius: 10px;                     /* Esquinas redondeadas */
+    object-fit: cover;                       /* Recorta sin deformar */
+}
